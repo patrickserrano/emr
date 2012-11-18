@@ -162,7 +162,7 @@ body {
   margin: 0;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
-  line-height: 20px;
+  line-height: 30px;
   color: #333333;
   background-color: #ffffff;
 }
@@ -738,7 +738,7 @@ ol ul {
 }
 
 li {
-  line-height: 20px;
+  line-height: 1.4em;
 }
 
 ul.unstyled,

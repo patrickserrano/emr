@@ -12,313 +12,320 @@
   </head>
   <body>
     <div class="container container-fluid">
-      <div class="row-fluid span10">
-        <div class="span10">
-          <h1 class="page-header">Ellen Ross</h1>
-          <div class="row-fluid">
-            <div class="span5">
-              <p class="lead text-success">Last Visit: 10/1/12</p>
-            </div>
-            <div class="span5">
-              <p class="lead">Date of Birth: 1/1/12</p>
-            </div>
+      <div class="row-fluid">
+        <div class="span12">
+          <h1 class="page-header">Ellen Ross <small style="margin-left: 20px;">Last Doctor Visit: 11/1/12</small></h1>
         </div>
       </div>
-      <div class="row-fluid">
-        <div class="span10">
-          <h2 class="page-header">Patient Information</h2>
-        </div>
-        <div class="row-fluid">
-          <div class="span5 accordion" id="demographics">
-            <div class="accordion-group">
-              <div class="accordion-heading">
-                <a class="accordion-toggle" data-toggle="collapse" data-parent="#demographics" href="#collapseOne">
-                  <h3>Demographics</h3>
-                </a>
+      <div class="row-fluid accordion" id="patientInfo">
+        <div class="accordion-group">
+          <div class="accordion-heading">
+            <a class="accordion-toggle" data-toggle="collapse" data-parent="#patientInfo" href="#collapsePatient">
+                <h2>Patient Information</h2>
+            </a>
+          </div>
+          <div class="accordion-body collapse" id="collapsePatient">
+            <div class="accordion-inner">
+            <div class="row-fluid">
+              <div class="span6 accordion" id="demographics">
+                <div class="accordion-group">
+                  <div class="accordion-heading">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#demographics" href="#collapseOne">
+                      <h3>Demographics</h3>
+                    </a>
+                  </div>
+                  <div class="accordion-body collapse" id="collapseOne">
+                    <div class="accordion-inner">
+                      <ul class="unstyled">
+                        <li><strong>First Name:</strong> Ellen</li>
+                        <li><strong>Last Name:</strong> Ross</li>
+                        <li><strong>Gender:</strong> Female</li>
+                        <li><strong>Martial Status:</strong> Married</li>
+                        <li><strong>Religious Affiliation:</strong> Christian</li>
+                        <li><strong>Ethnicity:</strong> Asian</li>
+                        <li><strong>Language Spoken:</strong> English</li>
+                        <li><strong>Address:</strong> 17 Daws Road, Portland, OR 97006</li>
+                        <li><strong>Telephone:</strong> 415-555-1229</li>
+                        <li><strong>Birthday:</strong> March 7, 1960</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="accordion-body collapse" id="collapseOne">
-                <div class="accordion-inner">
-                  <ul class="unstyled">
-                    <li><strong>First Name:</strong> Ellen</li>
-                    <li><strong>Last Name:</strong> Ross</li>
-                    <li><strong>Gender:</strong> Female</li>
-                    <li><strong>Martial Status:</strong> Married</li>
-                    <li><strong>Religious Affiliation:</strong> Christian</li>
-                    <li><strong>Ethnicity:</strong> Asian</li>
-                    <li><strong>Language Spoken:</strong> English</li>
-                    <li><strong>Address:</strong> 17 Daws Road, Portland, OR 97006</li>
-                    <li><strong>Telephone:</strong> 415-555-1229</li>
-                    <li><strong>Birthday:</strong> March 7, 1960</li>
-                  </ul>
+              <div class="span6 accordion" id="guardian">
+                <div class="accordion-group">
+                  <div class="accordion-heading">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#guardian" href="#collapseThree">
+                      <h3>Guardian</h3>
+                    </a>
+                  </div>
+                  <div class="accordion-body collapse" id="collapseThree">
+                    <div class="accordion-inner">
+                      <ul class="unstyled">
+                        <li><strong>Role:</strong> Sister</li>
+                        <li><strong>First Name:</strong> Martha</li>
+                        <li><strong>Last Name:</strong> Shan</li>
+                        <li><strong>Address:</strong> 1357 Amber Drive, Beaverton, OR 97006</li>
+                        <li><strong>Telephone:</strong> 816-276-6909</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row-fluid">
+              <div class="span6 accordion" id="provider">
+                <div class="accordion-group">
+                  <div class="accordion-heading">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="provider" href="#collapseTwo">
+                      <h3>Provider</h3>
+                    </a>
+                  </div>
+                  <div class="accordion-body collapse" id="collapseTwo">
+                    <div class="accordion-inner"> 
+                      <ul class="unstyled">
+                        <li><strong>Name of Provider:</strong> Ashby Medical Center</li>
+                        <li><strong>Address:</strong> 1002 Healthcare Dr, Portland, OR 97266</li>
+                        <li><strong>Telephone:</strong> 415-555-1200</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="span6 accordion" id="medication">
+                <div class="accordion-group">
+                  <div class="accordion-heading">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#medication" href="#collapseFive">              
+                      <h3>Medication</h3>
+                    </a>
+                  </div>
+                  <div class="accordion-body collapse" id="collapseFive">
+                    <div class="accordion-inner">
+                      <ul class="unstyled">
+                        <li><strong>Date:</strong> March 28, 2005</li>
+                        <li><strong>Type:</strong> Liquid</li>
+                        <li><strong>Name of Medication:</strong> Acetaminophen with codiene</li>
+                        <li><strong>Instructions:</strong> 2 puffs once a day</li>
+                        <li><strong>Dose Quantity <em>(value / unit)</em>:</strong> 2 / puffs</li>
+                        <li><strong>Rate Quantity <em>(value / unit)</em>:</strong> 1 / day</li>
+                        <li><strong>Name of Prescriber:</strong> Ashby Medical Center</li>
+                        <hr>
+                        <li><strong>Date:</strong> December 10, 2003</li>
+                        <li><strong>Type:</strong> Tablet</li>
+                        <li><strong>Name of Medication:</strong> Indomethacin</li>
+                        <li><strong>Instructions:</strong> 50mg bid with food</li>
+                        <li><strong>Dose Quantity <em>(value / unit)</em>:</strong> 50 / mg</li>
+                        <li><strong>Rate Quantity <em>(value / unit)</em>:</strong> 2 / day</li>
+                        <li><strong>Name of Prescriber:</strong> Ashby Medical Center</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row-fluid">
+              <div class="span6 accordion" id="allergies">
+                <div class="accordion-group">
+                  <div class="accordion-heading">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#allergies" href="#collapseFour">
+                      <h3>Allergies</h3>
+                    </a>
+                  </div>
+                  <div class="accordion-body collapse" id="collapseFour">
+                    <div class="accordion-inner">
+                      <ul class="unstyled">
+                        <li><strong>Allergy Name:</strong> Penicillin</li>
+                        <li><strong>Reaction:</strong> Hives</li>
+                        <li><strong>Severity:</strong> Moderate to severe</li>
+                        <hr>
+                        <li><strong>Allergy Name:</strong> Codeine</li>
+                        <li><strong>Reaction:</strong> Shortness of Breath</li>
+                        <li><strong>Severity:</strong> Moderate</li>
+                        <hr>
+                        <li><strong>Allergy Name:</strong> Bee Stings</li>
+                        <li><strong>Reaction:</strong> Anaphylactic Shock</li>
+                        <li><strong>Severity:</strong> Severe</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="span6 accordion" id="immunizations">
+                <div class="accordion-group">
+                  <div class="accordion-heading">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#immunizations" href="#collapseSix">
+                      <h3>Immunizations</h3>
+                    </a>
+                  </div>
+                  <div class="accordion-body collapse" id="collapseSix">
+                    <div class="accordion-inner">
+                      <ul class="unstyled">
+                        <li><strong>Date:</strong> May 2001</li>
+                        <li><stromg>Immunization Name:</stromg> Influenza virus vaccine, IM</li>
+                        <li><strong>Type:</strong> Intramuscular injection</li>
+                        <li><strong>Dose Quantity <em>(value / unit)</em>:</strong> 50 / mcg</li>
+                        <li><strong>Education/Instructions:</strong> Possible flu-like symptoms for three days</li>
+                        <hr>
+                        <li><strong>Date:</strong> April 2000</li>
+                        <li><strong>Immunization Name:</strong> Tetanus and diphtheria toxoids, IM</li>
+                        <li><strong>Type:</strong> Intramuscular injection</li>
+                        <li><strong>Dose Quantity <em>(value / unit)</em>:</strong> 50 / mcg</li>
+                        <li><strong>Education/Instructions:</strong> Mild pain or soreness in the local area</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row-fluid">
+              <div class="span6 accordion" id="planOfCare">
+                <div class="accordion-group">
+                  <div class="accordion-heading">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#planOfCare" href="#collapseSeven">
+                      <h3>Plan of Care</h3>
+                    </a>
+                  </div>
+                  <div class="accordion-body collapse" id="collapseSeven">
+                    <div class="accordion-inner">
+                      <ul class="unstyled">
+                        <li><strong>Planned Activity Name:</strong> Office consultation</li>
+                        <li><strong>Planned Date:</strong> May 28, 2007</li>
+                        <li><strong>Instructions:</strong> Consultation with Dr. George Potomac for Asthma</li>
+                        <hr>
+                        <li><strong>Planned Activity Name:</strong> Chest X-Ray</li>
+                        <li><strong>Planned Date:</strong> June 1, 2007</li>
+                        <li><strong>Instructions:</strong></li> 
+                        <hr>
+                        <li><strong>Planned Activity Name:</strong> Sputum Culture</li>
+                        <li><strong>Planned Date:</strong> May 28, 2007</li>
+                        <li><strong>Instructions:</strong></li> 
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="span6 accordion" id="encounters">
+                <div class="accordion-group">
+                  <div class="accordion-heading">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#encounters" href="#collapseEight">
+                      <h3>Encounters</h3>
+                    </a>
+                  </div>
+                  <div class="accordion-body collapse" id="collapseEight">
+                    <div class="accordion-inner">
+                      <ul class="unstyled">
+                        <li><strong>Encounter:</strong> ED Visit for Ankle Sprain</li>
+                        <li><strong>Provider:</strong> Dr. Henry Seven</li>
+                        <li><strong>Location:</strong> Community Hospital</li>
+                        <li><strong>Date:</strong> March 28, 2005</li>
+                        <hr>
+                        <li><strong>Encounter:</strong> Gall Bladder Surgery</li>
+                        <li><strong>Provider:</strong> Dr. Bala Venktaraman</li>
+                        <li><strong>Location:</strong> Ashby Medical Center</li>
+                        <li><strong>Date:</strong> September 28, 2002</li>
+                        <hr>
+                        <li><strong>Encounter:</strong> Labor and Delivery</li>
+                        <li><strong>Provider:</strong> Dr. Tiffany Martinez</li>
+                        <li><strong>Location:</strong> Ashby Medical Center</li>
+                        <li><strong>Date:</strong> March 21, 2002</li>
+                        <hr>
+                        <li><strong>Encounter:</strong> ED Visit for Acute Cholecystitis</li>
+                        <li><strong>Provider:</strong> Dr. Tim Lee</li>
+                        <li><strong>Location:</strong> Ashby Medical Center</li>
+                        <li><strong>Date:</strong> October 28, 2001</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row-fluid">
+              <div class="span6 accordion" id="problemList">
+                <div class="accordion-group">
+                  <div class="accordion-heading">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#problemList" href="#collapseNine">
+                      <h3>Problem List</h3>
+                    </a>
+                  </div>
+                  <div class="accordion-body collapse" id="collapseNine">
+                    <div class="accordion-inner">
+                      <ul class="unstyled">
+                        <li><strong>Observation:</strong> Ankle Sprain</li>
+                        <li><strong>Status:</strong> Active</li>
+                        <li><strong>Date:</strong> March 28, 2005</li>
+                        <li><strong>Comments:</strong> Slipped on ice and fell.</li>
+                        <hr>
+                        <li><strong>Observation:</strong> Cholecystitis</li>
+                        <li><strong>Status:</strong> Resolved</li>
+                        <li><strong>Date:</strong> September 28, 2002</li>
+                        <li><strong>Comments:</strong> Surgery postponed until after delivery</li>
+                      </ul>  
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="span6 accordion" id="procedures">
+                <div class="accordion-group">
+                  <div class="accordion-heading">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#procedures" href="#collapseTen">
+                      <h3>Procedures</h3>
+                    </a>
+                  </div>
+                  <div class="accordion-body collapse" id="collapseTen">
+                    <div class="accordion-inner">
+                      <ul class="unstyled">
+                        <li><strong>Procedure:</strong> Laparoscopic Cholecystectomy</li>
+                        <li><strong>Date:</strong> September 28, 2002</li>
+                        <li><strong>Provider:</strong> Dr. Bala Venktaraman</li>
+                        <li><strong>Location:</strong> Ashby Medical Center</li>
+                        <hr>
+                        <li><strong>Procedure:</strong> Cesarian Section</li>
+                        <li><strong>Date:</strong> March 22, 2002</li>
+                        <li><strong>Provider:</strong> Dr. Tiffany Martinez</li>
+                        <li><strong>Location:</strong> Ashby Medical Center</li>
+                      </ul>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="span5 accordion" id="guardian">
-            <div class="accordion-group">
-              <div class="accordion-heading">
-                <a class="accordion-toggle" data-toggle="collapse" data-parent="#guardian" href="#collapseThree">
-                  <h3>Guardian</h3>
-                </a>
-              </div>
-              <div class="accordion-body collapse" id="collapseThree">
-                <div class="accordion-inner">
-                  <ul class="unstyled">
-                    <li><strong>Role:</strong> Sister</li>
-                    <li><strong>First Name:</strong> Martha</li>
-                    <li><strong>Last Name:</strong> Shan</li>
-                    <li><strong>Address:</strong> 1357 Amber Drive, Beaverton, OR 97006</li>
-                    <li><strong>Telephone:</strong> 816-276-6909</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
       <div class="row-fluid">
-        <div class="span5 accordion" id="provider">
+        <div class="span12 accordion" id="labResults">
           <div class="accordion-group">
             <div class="accordion-heading">
-              <a class="accordion-toggle" data-toggle="collapse" data-parent="provider" href="#collapseTwo">
-                <h3>Provider</h3>
-              </a>
-            </div>
-            <div class="accordion-body collapse" id="collapseTwo">
-              <div class="accordion-inner"> 
-                <ul class="unstyled">
-                  <li><strong>Name of Provider:</strong> Ashby Medical Center</li>
-                  <li><strong>Address:</strong> 1002 Healthcare Dr, Portland, OR 97266</li>
-                  <li><strong>Telephone:</strong> 415-555-1200</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="span5 accordion" id="medication">
-          <div class="accordion-group">
-            <div class="accordion-heading">
-              <a class="accordion-toggle" data-toggle="collapse" data-parent="#medication" href="#collapseFive">              
-                <h3>Medication</h3>
-              </a>
-            </div>
-            <div class="accordion-body collapse" id="collapseFive">
-              <div class="accordion-inner">
-                <ul class="unstyled">
-                  <li><strong>Date:</strong> March 28, 2005</li>
-                  <li><strong>Type:</strong> Liquid</li>
-                  <li><strong>Name of Medication:</strong> Acetaminophen with codiene</li>
-                  <li><strong>Instructions:</strong> 2 puffs once a day</li>
-                  <li><strong>Dose Quantity <em>(value / unit)</em>:</strong> 2 / puffs</li>
-                  <li><strong>Rate Quantity <em>(value / unit)</em>:</strong> 1 / day</li>
-                  <li><strong>Name of Prescriber:</strong> Ashby Medical Center</li>
-                  <hr>
-                  <li><strong>Date:</strong> December 10, 2003</li>
-                  <li><strong>Type:</strong> Tablet</li>
-                  <li><strong>Name of Medication:</strong> Indomethacin</li>
-                  <li><strong>Instructions:</strong> 50mg bid with food</li>
-                  <li><strong>Dose Quantity <em>(value / unit)</em>:</strong> 50 / mg</li>
-                  <li><strong>Rate Quantity <em>(value / unit)</em>:</strong> 2 / day</li>
-                  <li><strong>Name of Prescriber:</strong> Ashby Medical Center</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row-fluid">
-        <div class="span5 accordion" id="allergies">
-          <div class="accordion-group">
-            <div class="accordion-heading">
-              <a class="accordion-toggle" data-toggle="collapse" data-parent="#allergies" href="#collapseFour">
-                <h3>Allergies</h3>
-              </a>
-            </div>
-            <div class="accordion-body collapse" id="collapseFour">
-              <div class="accordion-inner">
-                <ul class="unstyled">
-                  <li><strong>Allergy Name:</strong> Penicillin</li>
-                  <li><strong>Reaction:</strong> Hives</li>
-                  <li><strong>Severity:</strong> Moderate to severe</li>
-                  <hr>
-                  <li><strong>Allergy Name:</strong> Codeine</li>
-                  <li><strong>Reaction:</strong> Shortness of Breath</li>
-                  <li><strong>Severity:</strong> Moderate</li>
-                  <hr>
-                  <li><strong>Allergy Name:</strong> Bee Stings</li>
-                  <li><strong>Reaction:</strong> Anaphylactic Shock</li>
-                  <li><strong>Severity:</strong> Severe</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="span5 accordion" id="immunizations">
-          <div class="accordion-group">
-            <div class="accordion-heading">
-              <a class="accordion-toggle" data-toggle="collapse" data-parent="#immunizations" href="#collapseSix">
-                <h3>Immunizations</h3>
-              </a>
-            </div>
-            <div class="accordion-body collapse" id="collapseSix">
-              <div class="accordion-inner">
-                <ul class="unstyled">
-                  <li><strong>Date:</strong> May 2001</li>
-                  <li><stromg>Immunization Name:</stromg> Influenza virus vaccine, IM</li>
-                  <li><strong>Type:</strong> Intramuscular injection</li>
-                  <li><strong>Dose Quantity <em>(value / unit)</em>:</strong> 50 / mcg</li>
-                  <li><strong>Education/Instructions:</strong> Possible flu-like symptoms for three days</li>
-                  <hr>
-                  <li><strong>Date:</strong> April 2000</li>
-                  <li><strong>Immunization Name:</strong> Tetanus and diphtheria toxoids, IM</li>
-                  <li><strong>Type:</strong> Intramuscular injection</li>
-                  <li><strong>Dose Quantity <em>(value / unit)</em>:</strong> 50 / mcg</li>
-                  <li><strong>Education/Instructions:</strong> Mild pain or soreness in the local area</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row-fluid">
-        <div class="span5 accordion" id="planOfCare">
-          <div class="accordion-group">
-            <div class="accordion-heading">
-              <a class="accordion-toggle" data-toggle="collapse" data-parent="#planOfCare" href="#collapseSeven">
-                <h3>Plan of Care</h3>
-              </a>
-            </div>
-            <div class="accordion-body collapse" id="collapseSeven">
-              <div class="accordion-inner">
-                <ul class="unstyled">
-                  <li><strong>Planned Activity Name:</strong> Office consultation</li>
-                  <li><strong>Planned Date:</strong> May 28, 2007</li>
-                  <li><strong>Instructions:</strong> Consultation with Dr. George Potomac for Asthma</li>
-                  <hr>
-                  <li><strong>Planned Activity Name:</strong> Chest X-Ray</li>
-                  <li><strong>Planned Date:</strong> June 1, 2007</li>
-                  <li><strong>Instructions:</strong></li> 
-                  <hr>
-                  <li><strong>Planned Activity Name:</strong> Sputum Culture</li>
-                  <li><strong>Planned Date:</strong> May 28, 2007</li>
-                  <li><strong>Instructions:</strong></li> 
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="span5 accordion" id="encounters">
-          <div class="accordion-group">
-            <div class="accordion-heading">
-              <a class="accordion-toggle" data-toggle="collapse" data-parent="#encounters" href="#collapseEight">
-                <h3>Encounters</h3>
-              </a>
-            </div>
-            <div class="accordion-body collapse" id="collapseEight">
-              <div class="accordion-inner">
-                <ul class="unstyled">
-                  <li><strong>Encounter:</strong> ED Visit for Ankle Sprain</li>
-                  <li><strong>Provider:</strong> Dr. Henry Seven</li>
-                  <li><strong>Location:</strong> Community Hospital</li>
-                  <li><strong>Date:</strong> March 28, 2005</li>
-                  <hr>
-                  <li><strong>Encounter:</strong> Gall Bladder Surgery</li>
-                  <li><strong>Provider:</strong> Dr. Bala Venktaraman</li>
-                  <li><strong>Location:</strong> Ashby Medical Center</li>
-                  <li><strong>Date:</strong> September 28, 2002</li>
-                  <hr>
-                  <li><strong>Encounter:</strong> Labor and Delivery</li>
-                  <li><strong>Provider:</strong> Dr. Tiffany Martinez</li>
-                  <li><strong>Location:</strong> Ashby Medical Center</li>
-                  <li><strong>Date:</strong> March 21, 2002</li>
-                  <hr>
-                  <li><strong>Encounter:</strong> ED Visit for Acute Cholecystitis</li>
-                  <li><strong>Provider:</strong> Dr. Tim Lee</li>
-                  <li><strong>Location:</strong> Ashby Medical Center</li>
-                  <li><strong>Date:</strong> October 28, 2001</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row-fluid">
-        <div class="span5 accordion" id="problemList">
-          <div class="accordion-group">
-            <div class="accordion-heading">
-              <a class="accordion-toggle" data-toggle="collapse" data-parent="#problemList" href="#collapseNine">
-                <h3>Problem List</h3>
-              </a>
-            </div>
-            <div class="accordion-body collapse" id="collapseNine">
-              <div class="accordion-inner">
-                <ul class="unstyled">
-                  <li><strong>Observation:</strong> Ankle Sprain</li>
-                  <li><strong>Status:</strong> Active</li>
-                  <li><strong>Date:</strong> March 28, 2005</li>
-                  <li><strong>Comments:</strong> Slipped on ice and fell.</li>
-                  <hr>
-                  <li><strong>Observation:</strong> Cholecystitis</li>
-                  <li><strong>Status:</strong> Resolved</li>
-                  <li><strong>Date:</strong> September 28, 2002</li>
-                  <li><strong>Comments:</strong> Surgery postponed until after delivery</li>
-                </ul>  
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="span5 accordion" id="procedures">
-          <div class="accordion-group">
-            <div class="accordion-heading">
-              <a class="accordion-toggle" data-toggle="collapse" data-parent="#procedures" href="#collapseTen">
-                <h3>Procedures</h3>
-              </a>
-            </div>
-            <div class="accordion-body collapse" id="collapseTen">
-              <div class="accordion-inner">
-                <ul class="unstyled">
-                  <li><strong>Procedure:</strong> Laparoscopic Cholecystectomy</li>
-                  <li><strong>Date:</strong> September 28, 2002</li>
-                  <li><strong>Provider:</strong> Dr. Bala Venktaraman</li>
-                  <li><strong>Location:</strong> Ashby Medical Center</li>
-                  <hr>
-                  <li><strong>Procedure:</strong> Cesarian Section</li>
-                  <li><strong>Date:</strong> March 22, 2002</li>
-                  <li><strong>Provider:</strong> Dr. Tiffany Martinez</li>
-                  <li><strong>Location:</strong> Ashby Medical Center</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row-fluid">
-        <div class="span10 accordion" id="labResults">
-          <div class="accordion-group">
-            <div class="accordion-heading">
-              <a class="accordion-toggle" data-toggle="collapse" data-parent="#labResults" href="#collapseEleven">
-                <h3 class="page-header">Lab Results</h3>
+              <a class="accordion-toggle" data-toggle="collapse" data-parent="#labresults" href="#collapseEleven">
+                <h2>Lab Results</h2>  
               </a>
             </div>
             <div class="accordion-body collapse" id="collapseEleven">
               <div class="accordion-inner">
-                <div class="span3">
-                  <h4>Component</h4>
-                </div>
-                <div class="span3">
-                  <h4>Your Result</h4>
-                </div>
-                <div class="span3">
-                  <h4>Standard Range</h4>
-                </div>
-                <div class="span3">
-                  <h4>Units</h4>
-                </div>
+                <table class="table table-bordered table-hover">
+                  <thead>
+                    <tr>
+                      <th>Component</th>
+                      <th>Your Result</th>
+                      <th>Standard Range</th>
+                      <th>Units</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Triglyceride</td>
+                      <td>49</td>
+                      <td>&lt; 150</td>
+                      <td>MG/DL</td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
   </body>
 </html>
