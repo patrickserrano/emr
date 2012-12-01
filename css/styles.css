@@ -3,8 +3,9 @@ body {
   font-size: 20px;
   color: #333333;
   line-height: 1.5em;
-  background-color: #f9f9fc; 
+  background-color: #f9f9fc;
 }
+
 .container {
   margin: 0 auto;	
 }
@@ -15,4 +16,21 @@ body {
 
 #docDateAlt {
   display: none;
+}
+
+.accordion-heading{
+  background: #EFEFEF;
+}
+
+.patientInfo {
+  margin-bottom: 10px;
+}
+
+#mobileHead {
+  display: none;
+}
+
+#mobileHead small {
+  font-size: .6em;
+  font-weight: lighter;
 }

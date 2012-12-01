@@ -8,13 +8,18 @@
   <link rel="stylesheet" type="text/css" href="css/styles.css">
   <script src="http://code.jquery.com/jquery-latest.js"></script>
   <script src="js/bootstrap.js"></script>
+  <script src="js/script.js"></script>
     <title>Electronic Medical Record</title>
   </head>
-  <body>
+  <body onload="checkMobile()">
     <div class="container container-fluid">
       <div class="row-fluid">
-        <div class="span12">
+        <div class="span12" id="desktopHead">
           <h1 class="page-header">Ellen Ross <small style="margin-left: 20px;">Last Doctor Visit: 11/1/12</small></h1>
+        </div>
+
+        <div class="span12" id="mobileHead">
+          <h1 class="page-header">Ellen Ross<br /><small>Last Doctor Visit: 11/1/12</small></h1>
         </div>
       </div>
       <div class="row-fluid accordion" id="patientInfo">
@@ -24,7 +29,7 @@
                 <h2>Patient Information</h2>
             </a>
           </div>
-          <div class="accordion-body collapse" id="collapsePatient">
+          <div class="accordion-body collapse in" id="collapsePatient">
             <div class="accordion-inner">
             <div class="row-fluid">
               <div class="span6 accordion" id="demographics">
@@ -292,35 +297,33 @@
           </div>
         </div>
       </div>
-      <div class="row-fluid">
-        <div class="span12 accordion" id="labResults">
-          <div class="accordion-group">
-            <div class="accordion-heading">
-              <a class="accordion-toggle" data-toggle="collapse" data-parent="#labresults" href="#collapseEleven">
-                <h2>Lab Results</h2>  
-              </a>
-            </div>
-            <div class="accordion-body collapse" id="collapseEleven">
-              <div class="accordion-inner">
-                <table class="table table-bordered table-hover">
-                  <thead>
-                    <tr>
-                      <th>Component</th>
-                      <th>Your Result</th>
-                      <th>Standard Range</th>
-                      <th>Units</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>Triglyceride</td>
-                      <td>49</td>
-                      <td>&lt; 150</td>
-                      <td>MG/DL</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
+      <div class="row-fluid accordion" id="labResults">
+        <div class="accordion-group">
+          <div class="accordion-heading">
+            <a class="accordion-toggle" data-toggle="collapse" data-parent="#labresults" href="#collapseEleven">
+              <h2>Lab Results</h2>  
+            </a>
+          </div>
+          <div class="accordion-body collapse" id="collapseEleven">
+            <div class="accordion-inner">
+              <table class="table table-bordered table-hover">
+                <thead>
+                  <tr>
+                    <th>Component</th>
+                    <th>Your Result</th>
+                    <th>Standard Range</th>
+                    <th>Units</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Triglyceride</td>
+                    <td>49</td>
+                    <td>&lt; 150</td>
+                    <td>MG/DL</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </div>
         </div>
